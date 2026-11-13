@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayman Fathima — Full-Stack Developer &amp; Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Ayman Fathima, Software Engineer &amp; Full-Stack Developer building production web apps with Next.js, Node.js, MySQL, and AI adaptive learning research."
+    />
+    <meta
+      name="keywords"
+      content="Ayman Fathima, Full-Stack Developer, Software Engineer, Next.js, React, TypeScript, Node.js, AI Research, ProgFlex Tutor, Sri Lanka"
+    />
+    <meta name="author" content="Ayman Fathima" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ayman Fathima Portfolio" />
+    <meta
+      property="og:title"
+      content="Ayman Fathima — Full-Stack Developer &amp; Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Full-Stack Developer with production web engineering experience and academic AI/ML research in adaptive learning systems."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ayman Fathima — Full-Stack Developer &amp; Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Building scalable web applications and exploring intelligent solutions through AI and Machine Learning."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;1,9..40,400..600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ayman Fathima",
+        "jobTitle": "Software Engineer & Full-Stack Developer",
+        "email": "mailto:aymnfathm12@gmail.com",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Colombo"
+        },
+        "sameAs": [
+          "https://github.com/aymanfathima",
+          "https://www.linkedin.com/in/ayman-fathima-ayman12"
+        ],
+        "knowsAbout": [
+          "Full-Stack Web Development",
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Node.js",
+          "MySQL",
+          "PostgreSQL",
+          "Android Studio",
+          "Reinforcement Learning",
+          "Q-learning",
+          "Bayesian Knowledge Tracing"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Subtle Top-of-Screen Scroll Progress Bar -->
+    <div class="scroll-progress-track" aria-hidden="true">
+      <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
+    </div>
+
+    <!-- Sticky 3-Zone Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand-link" data-scroll-target="home">
+          Ayman Fathima
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#about" class="nav-link" data-scroll-target="about">About</a>
+          <a href="#experience" class="nav-link" data-scroll-target="experience">Experience</a>
+          <a href="#projects" class="nav-link" data-scroll-target="projects">Projects</a>
+          <a href="#research" class="nav-link" data-scroll-target="research">Research</a>
+          <a href="#contact" class="nav-link" data-scroll-target="contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="magnetic-wrap desktop-cv-wrap" data-magnetic data-strength="0.22" data-max-offset="6">
+            <a
+              href="assets/files/Ayman_Fathima_CV.pdf"
+              download="Ayman_Fathima_CV.pdf"
+              class="btn-cv-sm"
+            >
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="mobile-menu-btn"
+            aria-expanded="false"
+            aria-controls="mobile-navigation"
+            aria-label="Open navigation menu"
+          >
+            <span class="menu-icon-open">
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </span>
+            <span class="menu-icon-close" hidden>
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-navigation" class="mobile-drawer" hidden>
+        <nav class="mobile-nav-list" aria-label="Mobile navigation">
+          <a href="#about" class="mobile-nav-link" data-scroll-target="about">About</a>
+          <a href="#experience" class="mobile-nav-link" data-scroll-target="experience">Experience</a>
+          <a href="#projects" class="mobile-nav-link" data-scroll-target="projects">Projects</a>
+          <a href="#research" class="mobile-nav-link" data-scroll-target="research">Research</a>
+          <a href="#contact" class="mobile-nav-link" data-scroll-target="contact">Contact</a>
+          <a
+            href="assets/files/Ayman_Fathima_CV.pdf"
+            download="Ayman_Fathima_CV.pdf"
+            class="btn-cv-mobile"
+          >
+            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            <span>Download CV</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="home" class="hero-section">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+        <div class="hero-glow-violet" aria-hidden="true"></div>
+        <div class="hero-glow-cyan" aria-hidden="true"></div>
+
+        <div class="container hero-container">
+          <div class="hero-grid">
+            <!-- Left: Editorial Narrative & CTAs -->
+            <div class="hero-left">
+              
+
+              <div class="hero-name-wrap hero-enter" style="--delay: 80ms">
+                <h1 class="hero-name">
+                  AYMAN <span class="hero-name-accent">FATHIMA</span>
+                </h1>
+                <p class="hero-role">Full-Stack Developer | Software Engineer</p>
+              </div>
+
+              <h2 class="hero-headline hero-enter" style="--delay: 160ms">
+                Engineering Ideas Into Digital Reality.
+              </h2>
+
+              <p class="hero-intro hero-enter" style="--delay: 240ms">
+                I build scalable digital experiences, develop intelligent applications,
+                and explore the intersection of software engineering and artificial
+                intelligence.
+              </p>
+
+              <div class="hero-cta-row hero-enter" style="--delay: 320ms">
+                <div class="magnetic-wrap" data-magnetic data-strength="0.22" data-max-offset="7">
+                  <button
+                    type="button"
+                    class="btn-hero-primary"
+                    data-scroll-target="projects"
+                  >
+                    <span>Explore My Projects</span>
+                    <svg class="icon-sm btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </button>
+                </div>
+
+                <div class="magnetic-wrap" data-magnetic data-strength="0.2" data-max-offset="7">
+                  <a
+                    href="assets/files/Ayman_Fathima_CV.pdf"
+                    download="Ayman_Fathima_CV.pdf"
+                    class="btn-hero-secondary"
+                  >
+                    <svg class="icon-sm text-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    <span>Download My Resume</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="hero-socials hero-enter" style="--delay: 400ms">
+                <a
+                  href="https://github.com/aymanfathima"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ayman-fathima-ayman12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href="mailto:aymnfathm12@gmail.com"
+                  class="social-link social-link-email"
+                >
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Unobstructed Portrait in Glassmorphism Frame -->
+            <div class="hero-right hero-enter-portrait" id="hero-portrait-stage">
+              <div class="portrait-aura" aria-hidden="true"></div>
+
+              
+
+              <div class="portrait-glass-frame" id="portrait-glass-frame">
+                <div class="portrait-inner">
+                  <img
+                    src="assets/images/profile.jpeg"
+                    alt="Ayman Fathima — Full-Stack Developer &amp; Software Engineer"
+                    referrerpolicy="no-referrer"
+                    class="portrait-img"
+                  />
+                </div>
+              </div>
+
+              <div class="floating-pillars-card" id="floating-pillars-card">
+                <ul class="pillars-list">
+                  <li class="pillar-item">
+                    <span>FULL-STACK DEVELOPMENT</span>
+                    <span class="pillar-index">01</span>
+                  </li>
+                  <li class="pillar-item">
+                    <span>AI &amp; MACHINE LEARNING</span>
+                    <span class="pillar-index">02</span>
+                  </li>
+                  <li class="pillar-item">
+                    <span>RESEARCH &amp; INNOVATION</span>
+                    <span class="pillar-index">03</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT & SKILLS SECTION -->
+      <section id="about" class="section-bordered">
+        <div class="container">
+          <div class="about-grid reveal" data-reveal>
+            <div class="about-side">
+              <p class="eyebrow">About</p>
+              <h2 class="section-title">Background</h2>
+              <p class="about-languages">
+                Fluent in English, Tamil, and Sinhala (fluent in all three).
+              </p>
+            </div>
+
+            <div class="about-paragraphs">
+              <p>
+                I'm a Full-Stack Developer with a Bachelor of Information and
+                Communication Technology (Honours) from the University of Colombo,
+                Sri Lanka.
+              </p>
+              <p>
+                My professional work spans designing and maintaining live client
+                platforms—mostly with Next.js, TypeScript, Node.js, Laravel, MySQL,
+                and PostgreSQL—alongside six months of internship experience
+                customising ERPNext/Frappe workflows and shipping MERN stack
+                features.
+              </p>
+              <p>
+                Beyond full-stack engineering, my academic research explores
+                Artificial Intelligence, Reinforcement Learning (Q-learning), and
+                Bayesian Knowledge Tracing to personalise how beginner students
+                learn C programming.
+              </p>
+              <p>
+                I am comfortable working directly with clients, aligning on
+                priorities in Agile iterations, and adopting new engineering tools
+                rapidly when a project calls for them.
+              </p>
+            </div>
+          </div>
+
+          <div id="skills" class="skills-block">
+            <div class="reveal" data-reveal>
+              <p class="eyebrow">Capabilities</p>
+              <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <dl class="skills-list">
+              <div class="skill-row reveal" data-reveal style="--stagger: 0ms">
+                <dt class="skill-title">Frontend Engineering</dt>
+                <dd class="skill-items">
+                  React.js · Next.js · TypeScript · JavaScript · HTML5 · CSS3 · Tailwind CSS · Bootstrap · Framer Motion
+                </dd>
+              </div>
+              <div class="skill-row reveal" data-reveal style="--stagger: 45ms">
+                <dt class="skill-title">Backend &amp; APIs</dt>
+                <dd class="skill-items">
+                  Node.js · Express.js · Laravel · REST APIs · JWT Authentication · bcrypt · Nodemailer / SMTP
+                </dd>
+              </div>
+              <div class="skill-row reveal" data-reveal style="--stagger: 90ms">
+                <dt class="skill-title">Databases &amp; ORM</dt>
+                <dd class="skill-items">
+                  MySQL · PostgreSQL · MariaDB · MongoDB · Prisma ORM · Schema Design &amp; Query Optimisation
+                </dd>
+              </div>
+              <div class="skill-row reveal" data-reveal style="--stagger: 135ms">
+                <dt class="skill-title">Programming Languages</dt>
+                <dd class="skill-items">
+                  JavaScript · TypeScript · PHP · Python · Java · C · Go · SQL
+                </dd>
+              </div>
+              <div class="skill-row reveal" data-reveal style="--stagger: 180ms">
+                <dt class="skill-title">AI &amp; Machine Learning</dt>
+                <dd class="skill-items">
+                  Machine Learning Fundamentals · Reinforcement Learning · Q-learning · Bayesian Knowledge Tracing (BKT) · Adaptive Question Sequencing · Misconception Analysis
+                </dd>
+              </div>
+              <div class="skill-row reveal" data-reveal style="--stagger: 225ms">
+                <dt class="skill-title">Cloud, Hosting &amp; DevOps</dt>
+                <dd class="skill-items">
+                  AWS (EC2) · Docker · Kubernetes · Linux · GitHub Actions · Vercel · Hostinger Node.js Hosting
+                </dd>
+              </div>
+              <div class="skill-row reveal" data-reveal style="--stagger: 270ms">
+                <dt class="skill-title">Engineering Practices &amp; Tools</dt>
+                <dd class="skill-items">
+                  Agile / Scrum · SDLC · Git &amp; GitHub · JIRA · Postman · Unit &amp; Integration Testing · TDD · VS Code
+                </dd>
+              </div>
+              <div class="skill-row reveal" data-reveal style="--stagger: 315ms">
+                <dt class="skill-title">Mobile App Design</dt>
+                <dd class="skill-items">
+                  Android Studio · Android App UI/UX Design · XML Layouts · Java
+                </dd>
+              </div>
+              <div class="skill-row reveal" data-reveal style="--stagger: 360ms">
+                <dt class="skill-title">UI &amp; Product Design</dt>
+                <dd class="skill-items">
+                  Figma · Adobe XD · Wireframing · Responsive Web Design · User-Centred Design
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="section-bordered">
+        <div class="container">
+          <div class="reveal" data-reveal>
+            <p class="eyebrow">Career</p>
+            <h2 class="section-title">Experience</h2>
+          </div>
+
+          <div class="experience-list">
+            <article class="experience-card reveal" data-reveal style="--stagger: 0ms">
+              <div class="experience-meta">
+                <h3 class="card-title">Full-Stack Developer</h3>
+                <p class="experience-org">Atlatic Pvt Ltd (ASLATIS)</p>
+                <p class="experience-period">Present · Sri Lanka</p>
+              </div>
+
+              <div class="experience-body">
+                <p class="experience-desc">
+                  Design, build, and maintain live client websites and full-stack
+                  digital platforms, handling frontend interfaces, backend systems,
+                  database integration, admin panels, and production hosting.
+                </p>
+                <ul class="dash-list">
+                  <li>
+                    <span class="dash-mark" aria-hidden="true">—</span>
+                    <span>Design, build, and maintain client websites including Ceylon Tours and Tech Ceylon using Next.js, TypeScript, and Tailwind CSS.</span>
+                  </li>
+                  <li>
+                    <span class="dash-mark" aria-hidden="true">—</span>
+                    <span>Built the dynamic tour pricing engine, booking cart workflow, and administrative content panels across client platforms.</span>
+                  </li>
+                  <li>
+                    <span class="dash-mark" aria-hidden="true">—</span>
+                    <span>Configured production hosting, environment variables, and transactional SMTP email delivery on Hostinger Node.js plans.</span>
+                  </li>
+                  <li>
+                    <span class="dash-mark" aria-hidden="true">—</span>
+                    <span>Gather requirements directly from clients, align on delivery priorities, and ship iterative updates from feedback.</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="experience-card reveal" data-reveal style="--stagger: 70ms">
+              <div class="experience-meta">
+                <h3 class="card-title">Full-Stack Developer Intern</h3>
+                <p class="experience-org">Imara Software Solutions</p>
+                <p class="experience-period">6 Months · Sri Lanka</p>
+              </div>
+
+              <div class="experience-body">
+                <p class="experience-desc">
+                  Customised enterprise resource planning modules on Frappe/ERPNext
+                  and delivered client-facing full-stack features using the MERN stack.
+                </p>
+                <ul class="dash-list">
+                  <li>
+                    <span class="dash-mark" aria-hidden="true">—</span>
+                    <span>Customised an ERP system on the Frappe/ERPNext framework and built client-facing features with MongoDB, Express.js, React, and Node.js.</span>
+                  </li>
+                  <li>
+                    <span class="dash-mark" aria-hidden="true">—</span>
+                    <span>Gathered requirements alongside clients and engineering team members to deliver cross-browser responsive interfaces.</span>
+                  </li>
+                  <li>
+                    <span class="dash-mark" aria-hidden="true">—</span>
+                    <span>Debugged and optimised existing production codebases, improving system performance by up to 35%.</span>
+                  </li>
+                  <li>
+                    <span class="dash-mark" aria-hidden="true">—</span>
+                    <span>Maintained structured version control workflows with Git and GitHub following team branching conventions.</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="section-bordered">
+        <div class="container">
+          <div class="section-intro reveal" data-reveal>
+            <p class="eyebrow">Work</p>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-subtitle">
+              Client web platforms engineered with Next.js, TypeScript, Node.js,
+              and relational databases.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 01: Ceylon Tours -->
+            <div class="project-cell reveal" data-reveal style="--stagger: 0ms">
+              <div class="magnetic-wrap magnetic-card-wrap" data-magnetic data-strength="0.04" data-max-offset="6">
+                <article class="project-card">
+                  <button
+                    type="button"
+                    class="project-thumb-btn"
+                    data-open-project='{"title":"Ceylon Tours","category":"Travel & Tourism Platform","shortDescription":"A production travel and tourism platform showcasing curated Sri Lankan tour packages, multi-tier pricing, vehicle selection, and an integrated booking cart.","stack":["Next.js","React","TypeScript","Tailwind CSS","Node.js","MySQL","SMTP"],"features":["Curated tour package catalogue and destination itineraries","Dynamic tour pricing calculation and interactive booking cart","Vehicle selection and booking inquiry workflow with SMTP notifications","Administrative dashboard for managing packages, pricing, and inquiries","Production Node.js hosting and environment configuration on Hostinger"],"liveUrl":"https://ceylontours.lk","repoUrl":"","image":"assets/images/ceylontours.png","imageAlt":"Ceylon Tours live website screenshot featuring Sri Lanka tour planning hero section"}'
+                    aria-label="View details for Ceylon Tours"
+                  >
+                    <img
+                      src="assets/images/ceylontours.png"
+                      alt="Ceylon Tours live website screenshot featuring Sri Lanka tour planning hero section"
+                      referrerpolicy="no-referrer"
+                      class="project-thumb-img"
+                    />
+                    <span class="project-thumb-fade" aria-hidden="true"></span>
+                  </button>
+
+                  <div class="project-card-body">
+                    <div>
+                      <p class="project-category">Travel &amp; Tourism Platform</p>
+                      <h3 class="project-title">Ceylon Tours</h3>
+                      <p class="project-desc">
+                        A production travel and tourism platform showcasing curated
+                        Sri Lankan tour packages, multi-tier pricing, vehicle selection,
+                        and an integrated booking cart.
+                      </p>
+                      <p class="project-stack">
+                        Next.js · React · TypeScript · Tailwind CSS · Node.js · MySQL · SMTP
+                      </p>
+                    </div>
+
+                    <div class="project-links">
+                      <button
+                        type="button"
+                        class="project-case-btn"
+                        data-open-project='{"title":"Ceylon Tours","category":"Travel & Tourism Platform","shortDescription":"A production travel and tourism platform showcasing curated Sri Lankan tour packages, multi-tier pricing, vehicle selection, and an integrated booking cart.","stack":["Next.js","React","TypeScript","Tailwind CSS","Node.js","MySQL","SMTP"],"features":["Curated tour package catalogue and destination itineraries","Dynamic tour pricing calculation and interactive booking cart","Vehicle selection and booking inquiry workflow with SMTP notifications","Administrative dashboard for managing packages, pricing, and inquiries","Production Node.js hosting and environment configuration on Hostinger"],"liveUrl":"https://ceylontours.lk","repoUrl":"","image":"assets/images/ceylontours.png","imageAlt":"Ceylon Tours live website screenshot featuring Sri Lanka tour planning hero section"}'
+                      >
+                        <span>View Case Study</span>
+                        <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </button>
+
+                      <a
+                        href="https://ceylontours.lk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-live-link"
+                      >
+                        <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        <span>Live Site</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Project 02: Colombo Real Estate -->
+            <div class="project-cell reveal" data-reveal style="--stagger: 65ms">
+              <div class="magnetic-wrap magnetic-card-wrap" data-magnetic data-strength="0.04" data-max-offset="6">
+                <article class="project-card">
+                  <button
+                    type="button"
+                    class="project-thumb-btn"
+                    data-open-project='{"title":"Colombo Real Estate","category":"Real Estate Platform","shortDescription":"A residential and commercial property listing platform built for structured property discovery, category filtering, and administrative listing control.","stack":["Next.js","React","TypeScript","Prisma ORM","MySQL"],"features":["Residential and commercial property listing management","Structured property categories with search and attribute filtering","Admin dashboard for creating, updating, and moderating listings","Relational schema design and query integration via Prisma ORM & MySQL"],"liveUrl":"https://colomborealestates.com","repoUrl":"","image":"assets/images/realestate.png","imageAlt":"Colombo Real Estate\u0027s live website screenshot showcasing property sales and advisory"}'
+                    aria-label="View details for Colombo Real Estate"
+                  >
+                    <img
+                      src="assets/images/realestate.png"
+                      alt="Colombo Real Estate's live website screenshot showcasing property sales and advisory"
+                      referrerpolicy="no-referrer"
+                      class="project-thumb-img"
+                    />
+                    <span class="project-thumb-fade" aria-hidden="true"></span>
+                  </button>
+
+                  <div class="project-card-body">
+                    <div>
+                      <p class="project-category">Real Estate Platform</p>
+                      <h3 class="project-title">Colombo Real Estate</h3>
+                      <p class="project-desc">
+                        A residential and commercial property listing platform built
+                        for structured property discovery, category filtering, and
+                        administrative listing control.
+                      </p>
+                      <p class="project-stack">
+                        Next.js · React · TypeScript · Prisma ORM · MySQL
+                      </p>
+                    </div>
+
+                    <div class="project-links">
+                      <button
+                        type="button"
+                        class="project-case-btn"
+                        data-open-project='{"title":"Colombo Real Estate","category":"Real Estate Platform","shortDescription":"A residential and commercial property listing platform built for structured property discovery, category filtering, and administrative listing control.","stack":["Next.js","React","TypeScript","Prisma ORM","MySQL"],"features":["Residential and commercial property listing management","Structured property categories with search and attribute filtering","Admin dashboard for creating, updating, and moderating listings","Relational schema design and query integration via Prisma ORM & MySQL"],"liveUrl":"https://colomborealestates.lk","repoUrl":"","image":"assets/images/realestate.png","imageAlt":"Colombo Real Estate\u0027s live website screenshot showcasing property sales and advisory"}'
+                      >
+                        <span>View Case Study</span>
+                        <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </button>
+
+                      <a
+                        href="https://colomborealestates.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-live-link"
+                      >
+                        <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        <span>Live Site</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Project 03: Tech Ceylon -->
+            <div class="project-cell reveal" data-reveal style="--stagger: 130ms">
+              <div class="magnetic-wrap magnetic-card-wrap" data-magnetic data-strength="0.04" data-max-offset="6">
+                <article class="project-card">
+                  <button
+                    type="button"
+                    class="project-thumb-btn"
+                    data-open-project='{"title":"Tech Ceylon","category":"Technology Platform","shortDescription":"A modern technology-oriented business web platform integrating responsive Next.js frontend architecture, backend authentication, and content administration.","stack":["Next.js","React","TypeScript","Tailwind CSS","Node.js","MySQL"],"features":["Responsive corporate and service presentation built with Next.js & Tailwind CSS","Authenticated administrative panel for dynamic content management","Backend API routes and relational MySQL database integration","Production deployment, DNS/environment setup, and ongoing maintenance"],"liveUrl":"https://techceylon.lk","repoUrl":"","image":"assets/images/techceylon.png","imageAlt":"Tech Ceylon live website screenshot highlighting software, cloud, and AI solutions"}'
+                    aria-label="View details for Tech Ceylon"
+                  >
+                    <img
+                      src="assets/images/techceylon.png"
+                      alt="Tech Ceylon live website screenshot highlighting software, cloud, and AI solutions"
+                      referrerpolicy="no-referrer"
+                      class="project-thumb-img"
+                    />
+                    <span class="project-thumb-fade" aria-hidden="true"></span>
+                  </button>
+
+                  <div class="project-card-body">
+                    <div>
+                      <p class="project-category">Technology Platform</p>
+                      <h3 class="project-title">Tech Ceylon</h3>
+                      <p class="project-desc">
+                        A modern technology-oriented business web platform integrating
+                        responsive Next.js frontend architecture, backend authentication,
+                        and content administration.
+                      </p>
+                      <p class="project-stack">
+                        Next.js · React · TypeScript · Tailwind CSS · Node.js · MySQL
+                      </p>
+                    </div>
+
+                    <div class="project-links">
+                      <button
+                        type="button"
+                        class="project-case-btn"
+                        data-open-project='{"title":"Tech Ceylon","category":"Technology Platform","shortDescription":"A modern technology-oriented business web platform integrating responsive Next.js frontend architecture, backend authentication, and content administration.","stack":["Next.js","React","TypeScript","Tailwind CSS","Node.js","MySQL"],"features":["Responsive corporate and service presentation built with Next.js & Tailwind CSS","Authenticated administrative panel for dynamic content management","Backend API routes and relational MySQL database integration","Production deployment, DNS/environment setup, and ongoing maintenance"],"liveUrl":"https://techceylon.lk","repoUrl":"","image":"assets/images/techceylon.png","imageAlt":"Tech Ceylon live website screenshot highlighting software, cloud, and AI solutions"}'
+                      >
+                        <span>View Case Study</span>
+                        <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </button>
+
+                      <a
+                        href="https://techceylon.lk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-live-link"
+                      >
+                        <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        <span>Live Site</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Project 04: Colombo Life's Fair -->
+            <div class="project-cell reveal" data-reveal style="--stagger: 195ms">
+              <div class="magnetic-wrap magnetic-card-wrap" data-magnetic data-strength="0.04" data-max-offset="6">
+                <article class="project-card">
+                  <button
+                    type="button"
+                    class="project-thumb-btn"
+                    data-open-project='{"title":"Colombo Life\u0027s Fair","category":"Event Management Platform","shortDescription":"A digital event platform designed to present fair schedules, exhibitor information, and stall management workflows with dynamic admin control.","stack":["Next.js","React","TypeScript","MySQL"],"features":["Event overview, exhibitor highlights, and visitor schedule presentation","Stall management and exhibitor allocation administration","Dynamic content updates via integrated backend and MySQL database","Mobile-responsive layout across phones, tablets, and desktops"],"liveUrl":"","repoUrl":"","image":"assets/images/colombolife.png","imageAlt":"Colombo Life\u0027s Fair website screenshot showing fair showcase and stall booking navigation"}'
+                    aria-label="View details for Colombo Life's Fair"
+                  >
+                    <img
+                      src="assets/images/colombolife.png"
+                      alt="Colombo Life's Fair website screenshot showing fair showcase and stall booking navigation"
+                      referrerpolicy="no-referrer"
+                      class="project-thumb-img"
+                    />
+                    <span class="project-thumb-fade" aria-hidden="true"></span>
+                  </button>
+
+                  <div class="project-card-body">
+                    <div>
+                      <p class="project-category">Event Management Platform</p>
+                      <h3 class="project-title">Colombo Life's Fair</h3>
+                      <p class="project-desc">
+                        A digital event platform designed to present fair schedules,
+                        exhibitor information, and stall management workflows with
+                        dynamic admin control.
+                      </p>
+                      <p class="project-stack">
+                        Next.js · React · TypeScript · MySQL
+                      </p>
+                    </div>
+
+                    <div class="project-links">
+                      <button
+                        type="button"
+                        class="project-case-btn"
+                        data-open-project='{"title":"Colombo Life\u0027s Fair","category":"Event Management Platform","shortDescription":"A digital event platform designed to present fair schedules, exhibitor information, and stall management workflows with dynamic admin control.","stack":["Next.js","React","TypeScript","MySQL"],"features":["Event overview, exhibitor highlights, and visitor schedule presentation","Stall management and exhibitor allocation administration","Dynamic content updates via integrated backend and MySQL database","Mobile-responsive layout across phones, tablets, and desktops"],"liveUrl":"","repoUrl":"","image":"assets/images/colombolife.png","imageAlt":"Colombo Life\u0027s Fair website screenshot showing fair showcase and stall booking navigation"}'
+                      >
+                        <span>View Case Study</span>
+                        <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                      </button>
+
+                      <a
+                        href="https://colombolifes.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-live-link"
+                      >
+                        <span>Live Site</span>
+                        <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH SECTION -->
+      <section id="research" class="section-bordered">
+        <div class="container">
+          <div class="reveal" data-reveal>
+            <p class="eyebrow">AI &amp; Research</p>
+            <h2 class="section-title">ProgFlex Tutor</h2>
+            <p class="research-subtitle">
+              AI-Enhanced Adaptive Coding Tutor for Beginner Programmers
+            </p>
+          </div>
+
+          <div class="research-panel reveal" data-reveal style="--stagger: 80ms">
+            <p class="research-desc">
+              ProgFlex Tutor is my final-year capstone research platform built at the
+              University of Colombo to support undergraduate students learning C
+              programming. The system pairs Bayesian Knowledge Tracing (BKT) with a
+              Q-learning reinforcement learning agent to dynamically select question
+              difficulty and sequence learning interventions based on each student’s
+              evolving mastery and misconception patterns.
+            </p>
+
+            <ul class="dash-list research-notes">
+              <li>
+                <span class="dash-mark" aria-hidden="true">—</span>
+                <span>Designed and built the full-stack learning platform, C programming question bank, automated evaluation engine, and adaptive sequencing architecture.</span>
+              </li>
+              <li>
+                <span class="dash-mark" aria-hidden="true">—</span>
+                <span>Applied Bayesian Knowledge Tracing (BKT) to continuously estimate concept mastery and surface recurring beginner C misconceptions.</span>
+              </li>
+              <li>
+                <span class="dash-mark" aria-hidden="true">—</span>
+                <span>Trained and evaluated a Q-learning policy to adaptively sequence problem difficulty and personalised interventions per learner state.</span>
+              </li>
+              <li>
+                <span class="dash-mark" aria-hidden="true">—</span>
+                <span>Completed empirical evaluation and defended the system as the final-year BICT (Honours) research capstone.</span>
+              </li>
+            </ul>
+
+            <div class="research-footer">
+              <p class="research-symposium">
+                Annual Research Symposium 2026 · Selected for Presentation
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="section-bordered">
+        <div class="container">
+          <div class="education-grid">
+            <div class="education-side reveal" data-reveal>
+              <p class="eyebrow">Academic</p>
+              <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="education-list">
+              <div class="education-item education-item-first reveal" data-reveal style="--stagger: 0ms">
+                <div class="education-head">
+                  <h3 class="education-degree">
+                    Bachelor of Information and Communication Technology (Honours)
+                  </h3>
+                  <span class="education-period">2021 – 2026</span>
+                </div>
+                <p class="education-meta">
+                  University of Colombo — Faculty of Technology · Completed
+                </p>
+              </div>
+
+              <div class="education-item reveal" data-reveal style="--stagger: 65ms">
+                <div class="education-head">
+                  <h3 class="education-degree">
+                    Advanced Networking Certification (CCNAv7)
+                  </h3>
+                  <span class="education-period">2021</span>
+                </div>
+                <p class="education-meta">SLIIT, Sri Lanka · Completed</p>
+              </div>
+
+              <div class="education-item education-certs reveal" data-reveal style="--stagger: 140ms">
+                <h3 class="certs-title">Certifications</h3>
+                <p class="certs-list">
+                  Full-Stack Web Development (MERN Stack) · Responsive Web Design · RESTful API Development · Agile Project Management · Cloud Architecture Basics (AWS)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section-contact">
+        <div class="container">
+          <div class="contact-card reveal" data-reveal>
+            <div class="contact-grid">
+              <div class="contact-left">
+                <p class="eyebrow">Get in Touch</p>
+                <h2 class="section-title">Let's Build Something Meaningful.</h2>
+                <p class="contact-location">Puttalam, Sri Lanka</p>
+              </div>
+
+              <div class="contact-right">
+                <p class="contact-summary">
+                  Open to full-stack software engineering roles, remote teams,
+                  and AI/ML engineering opportunities.
+                </p>
+
+                <div class="contact-cta-row">
+                  <div class="magnetic-wrap" data-magnetic data-strength="0.2" data-max-offset="6">
+                    <a
+                      href="mailto:aymnfathm12@gmail.com"
+                      class="btn-primary-md"
+                    >
+                      <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                      <span>Email Me</span>
+                    </a>
+                  </div>
+
+                  <div class="magnetic-wrap" data-magnetic data-strength="0.18" data-max-offset="6">
+                    <button
+                      type="button"
+                      id="copy-email-btn"
+                      data-email="aymnfathm12@gmail.com"
+                      class="btn-secondary-md"
+                    >
+                      <span class="copy-default">
+                        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                        <span>aymnfathm12@gmail.com</span>
+                      </span>
+                      <span class="copy-done" hidden>
+                        <svg class="icon-sm text-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span>Copied</span>
+                      </span>
+                    </button>
+                  </div>
+
+                  <div class="magnetic-wrap" data-magnetic data-strength="0.2" data-max-offset="6">
+                    <a
+                      href="assets/files/Ayman_Fathima_CV.pdf"
+                      download="Ayman_Fathima_CV.pdf"
+                      class="btn-secondary-md"
+                    >
+                      <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                      <span>CV</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-socials">
+                  <a
+                    href="https://www.linkedin.com/in/ayman-fathima-ayman12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                  >
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://github.com/aymanfathima"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link"
+                  >
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="current-year">2026</span> Ayman Fathima</p>
+        <div class="footer-links">
+          <button type="button" class="footer-link-btn" data-scroll-target="projects">
+            Projects
+          </button>
+          <button type="button" class="footer-link-btn" data-scroll-target="research">
+            Research
+          </button>
+          <button type="button" class="footer-link-btn" id="back-to-top-btn">
+            Back to top
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project Case Study Modal -->
+    <div
+      id="project-modal-backdrop"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="project-modal-title"
+      hidden
+    >
+      <div class="modal-dialog" id="project-modal-dialog">
+        <div class="modal-header">
+          <p id="project-modal-category" class="modal-category"></p>
+          <button
+            type="button"
+            id="project-modal-close"
+            class="modal-close-btn"
+            aria-label="Close project details"
+          >
+            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+
+        <div id="project-modal-image-wrap" class="modal-image-wrap">
+          <img
+            id="project-modal-image"
+            src=""
+            alt=""
+            referrerpolicy="no-referrer"
+            class="modal-image"
+          />
+        </div>
+
+        <div class="modal-body">
+          <div>
+            <h3 id="project-modal-title" class="modal-title"></h3>
+            <p id="project-modal-description" class="modal-description"></p>
+          </div>
+
+          <div>
+            <h4 class="modal-subtitle">Key Features</h4>
+            <ul id="project-modal-features" class="modal-features"></ul>
+          </div>
+
+          <div>
+            <h4 class="modal-subtitle">Technologies</h4>
+            <p id="project-modal-stack" class="modal-stack"></p>
+          </div>
+
+          <div id="project-modal-actions" class="modal-actions" hidden>
+            <div class="magnetic-wrap" data-magnetic data-strength="0.2" data-max-offset="6">
+              <a
+                id="project-modal-live"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-modal-primary"
+                hidden
+              >
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                <span>Visit Live Site</span>
+              </a>
+            </div>
+
+            <div class="magnetic-wrap" data-magnetic data-strength="0.2" data-max-offset="6">
+              <a
+                id="project-modal-repo"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-modal-secondary"
+                hidden
+              >
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
